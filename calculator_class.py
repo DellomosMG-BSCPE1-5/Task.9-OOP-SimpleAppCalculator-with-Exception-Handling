@@ -7,9 +7,10 @@
 class Calculator:
 
 #under the Calculator class, create a method for the menu
-    def menu():
+    def menu(self):
 #under the menu method, ask the user what operation he/she wants to use
-        print("\nOPTIONS: \n\t[1] Addition, \n[2] Subtraction, \n[3] Multiplication, \n[4] Division")
+        print("\nOPTIONS: \n\t[1] Addition, \n\t[2] Subtraction, \n\t[3] Multiplication, \n\t[4] Division")
+        operation = int(input("\nKindly enter the number that corresponds to the operation you want to perform: "))
 #insert exception handling incase the user enters a wrong input
 #create a method for the user input
 #under the user input method, ask user for the first number
