@@ -13,10 +13,17 @@ class Calculator:
                 #under the menu method, ask the user what operation he/she wants to use
                 print("OPTIONS: \n\t[1] Addition, \n\t[2] Subtraction, \n\t[3] Multiplication, \n\t[4] Division")
                 operation = int(input("\nKindly enter the number that corresponds to the operation you want to perform: "))
-                #return operation
-                return operation
+                #if the input is among number 1-4,
+                if operation in range (1,5):
+                    #then return operation
+                    return operation
+                #else, if the input is not belong to numbers from 1-4,
+                else:
+                    #then
+                    print("\n\tInvalid Input. Please enter a number from 1-4 only.")
+            #if there's an error detected, except block will be executed
             except (ValueError, TypeError):
-                print("\n\tInvalid Input. Please enter a numeric character from 1-4 only.")
+                print("\n\tInvalid Input. Please enter a numeric character.")
 
     #create a method for the user input
     def get_numbers(self):
@@ -28,6 +35,7 @@ class Calculator:
                 second_number = float(input("\tEnter second number: "))
                 #return the first and second inputs
                 return (first_number, second_number)
+            #if there's an error detected, except block will be executed
             except (ValueError, TypeError):
                 print("\n\tInvalid Input. Please enter a numeric character.")
 
@@ -42,7 +50,7 @@ class Calculator:
         print("\n\tThe sum is " + str(sum))
 
     #create method for subtraction operation
-    def subtration(self):   
+    def subtraction(self):   
         #under the subtraction method, call the get_numbers method to get the inputs from user that are needed to perform the operation
         inputs = self.get_numbers()
         #perform the subtraction operation on two numbers.
@@ -75,5 +83,6 @@ class Calculator:
                     print("\n\tThe quotient is", format(quotient, ".3f"))
                 else:
                     print("\n\tThe quotient is", round(quotient))
+            #if there's an error detected, except block will be executed
             except ZeroDivisionError:
                 print("\n\tZero Division Error: Second number cannot be 0.")
