@@ -23,7 +23,8 @@ while True:
     else:
         simple_calculator.division()
     
-    again = input("\nDo you want to try again? Type Y to restart or press another key to quit: ")  # Asking the user if he/she wants to try/start again.
+    #ask if user wants to use the program again
+    again = input("\nDo you want to use the program again? Type Y to restart or press another key to quit: ")  # Asking the user if he/she wants to try/start again.
     #if user typed "y", go back to the top.
     if again.upper() == "Y":  
         continue
