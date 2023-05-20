@@ -8,20 +8,26 @@ class Calculator:
 
     #under the Calculator class, create a method for the menu
     def menu(self):
-        #under the menu method, ask the user what operation he/she wants to use
-        print("OPTIONS: \n\t[1] Addition, \n\t[2] Subtraction, \n\t[3] Multiplication, \n\t[4] Division")
-        operation = int(input("\nKindly enter the number that corresponds to the operation you want to perform: "))
-        #return operation
-        return operation
-    
+        try:
+            #under the menu method, ask the user what operation he/she wants to use
+            print("OPTIONS: \n\t[1] Addition, \n\t[2] Subtraction, \n\t[3] Multiplication, \n\t[4] Division")
+            operation = int(input("\nKindly enter the number that corresponds to the operation you want to perform: "))
+            #return operation
+            return operation
+        except ValueError:
+            print("\n\tInvalid Input. Please enter a numeric character from 1-4 only.")
+
     #create a method for the user input
     def get_numbers(self):
-        #under the user input method, ask user for the first number
-        first_number = float(input("\n\tEnter first number: "))
-        #under the user input method, ask user for the second number
-        second_number = float(input("\tEnter second number: "))
-        #return the first and second inputs
-        return (first_number, second_number)
+        try:
+            #under the user input method, ask user for the first number
+            first_number = float(input("\n\tEnter first number: "))
+            #under the user input method, ask user for the second number
+            second_number = float(input("\tEnter second number: "))
+            #return the first and second inputs
+            return (first_number, second_number)
+        except: 
+            print("\n\tInvalid Input. Please enter a numeric character.")
 
     #create method for addition operation
     def addition(self):
@@ -67,4 +73,4 @@ class Calculator:
             else:
                 print("\nThe quotient is", round(quotient))
         except ZeroDivisionError:
-            print("Zero Division Error: Second number cannot be 0.")
+            print("\n\tZero Division Error: Second number cannot be 0.")
