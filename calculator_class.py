@@ -27,11 +27,9 @@ class Calculator:
     def addition(self):
         #under the addition method, call the get_numbers method to get the inputs from user that are needed to perform the operation
         inputs = self.get_numbers()
-        #assign the first and second number retrieved from the user
-        first_number = inputs[0]
-        second_number = inputs[1]
-        #perform the addition operation on two numbers
-        sum = first_number + second_number
+        #perform the addition operation on two numbers.
+        #the 1st number is inputs[0] and the 2nd number is inputs[1]
+        sum = inputs[0] + inputs[1]
         #return the sum of the two numbers
         print(sum)
         
