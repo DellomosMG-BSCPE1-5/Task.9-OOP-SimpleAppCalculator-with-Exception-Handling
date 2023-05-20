@@ -30,8 +30,8 @@ class Calculator:
         #perform the addition operation on two numbers.
         #the 1st number is inputs[0] and the 2nd number is inputs[1]
         sum = inputs[0] + inputs[1]
-        #return the sum of the two numbers
-        print("The sum is " + str(sum))
+        #print the sum of the two numbers
+        print("\nThe sum is " + str(sum))
 
     #create method for subtraction operation
     def subtration(self):   
@@ -40,8 +40,8 @@ class Calculator:
         #perform the subtraction operation on two numbers.
         #the 1st number is inputs[0] and the 2nd number is inputs[1]
         difference = inputs[0] - inputs[1]
-        #return the difference of the two numbers
-        print("The difference is " + str(difference))
+        #print the difference of the two numbers
+        print("\nThe difference is " + str(difference))
 
     #create method for multiplication operation
     def multiplication(self):
@@ -50,15 +50,21 @@ class Calculator:
         #perform the multiplication operation on two numbers.
         #the 1st number is inputs[0] and the 2nd number is inputs[1]
         product = inputs[0] * inputs[1]
-        #return the product of the two numbers
-        print("The product is " + str(product))
+        #print the product of the two numbers
+        print("\nThe product is " + str(product))
 
     #create method for division operation
     def division(self):
-        #under the division method, call the get_numbers method to get the inputs from user that are needed to perform the operation
-        inputs = self.get_numbers()
-        #perform the division operation on two numbers.
-        #the 1st number is inputs[0] and the 2nd number is inputs[1]
-        quotient = inputs[0] / inputs[1]
-        #return the quotient of the two numbers
-        print("The quotient is " + str(quotient))
+        try:
+            #under the division method, call the get_numbers method to get the inputs from user that are needed to perform the operation
+            inputs = self.get_numbers()
+            #perform the division operation on two numbers.
+            #the 1st number is inputs[0] and the 2nd number is inputs[1]
+            quotient = inputs[0] / inputs[1]
+            #print the quotient of the two numbers
+            if quotient < 1:
+                print("\nThe quotient is", format(quotient, ".3f"))
+            else:
+                print("\nThe quotient is", round(quotient))
+        except ZeroDivisionError:
+            print("Zero Division Error: Second number cannot be 0.")

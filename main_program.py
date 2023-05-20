@@ -2,5 +2,5 @@ from calculator_class import Calculator
 
 calculate = Calculator()
 
-calculate.addition()
+calculate.division()
 
