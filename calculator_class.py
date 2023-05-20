@@ -32,15 +32,19 @@ class Calculator:
         sum = inputs[0] + inputs[1]
         #return the sum of the two numbers
         print(sum)
-        
+
 #create method for subtraction operation
-#under the subtraction method, perform the subtraction operation on two numbers
+#under the subtraction method, call the get_numbers method to get the inputs from user that are needed to perform the operation
+#perform the subtraction operation on two numbers.
+#the 1st number is inputs[0] and the 2nd number is inputs[1]
 #return the difference of the two numbers
 #create method for multiplication operation
-#under the multiplication method, perform the multiplication operation on two numbers
+#under the multiplication method, call the get_numbers method to get the inputs from user that are needed to perform the operation
+#perform the multiplication operation on two numbers.
+#the 1st number is inputs[0] and the 2nd number is inputs[1]
 #return the product of the two numbers
 #create method for division operation
-#under the division method, perform the division operation on two numbers
-#insert exception handling (ZeroDivisionError) incase the zero number is equal to zero
-#call the user input method to ask for user's input again. This time, the second number should not be equal to zero again.
-#return the product of the two numbers if the first and second numbers are valid and successfully obtained their quotient
+#under the division method, call the get_numbers method to get the inputs from user that are needed to perform the operation
+#perform the division operation on two numbers.
+#the 1st number is inputs[0] and the 2nd number is inputs[1]
+#return the quotient of the two numbers
