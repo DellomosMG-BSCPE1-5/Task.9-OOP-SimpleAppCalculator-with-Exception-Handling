@@ -25,10 +25,15 @@ class Calculator:
 
     #create method for addition operation
     def addition(self):
-        #under the addition method, perform the addition operation on two numbers
+        #under the addition method, call the get_numbers method to get the inputs from user that are needed to perform the operation
+        inputs = self.get_numbers()
+        #assign the first and second number retrieved from the user
+        first_number = inputs[0]
+        second_number = inputs[1]
+        #perform the addition operation on two numbers
         sum = first_number + second_number
         #return the sum of the two numbers
-        return sum
+        print(sum)
         
 #create method for subtraction operation
 #under the subtraction method, perform the subtraction operation on two numbers
