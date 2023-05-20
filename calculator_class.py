@@ -6,6 +6,10 @@
 #for the class file, create a class named Calculator
 class Calculator:
 
+    #constructor
+    def __init__(self):
+        pass
+    
     #under the Calculator class, create a method for the menu
     def menu(self):
         while True:
