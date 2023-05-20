@@ -2,9 +2,14 @@
 
 #pseudocode for the class file
 #create a file for the calculator class that contains necessary methods
+
 #for the class file, create a class named Calculator
+class Calculator:
+
 #under the Calculator class, create a method for the menu
+    def menu():
 #under the menu method, ask the user what operation he/she wants to use
+        print("\nOPTIONS: \n\t[1] Addition, \n[2] Subtraction, \n[3] Multiplication, \n[4] Division")
 #insert exception handling incase the user enters a wrong input
 #create a method for the user input
 #under the user input method, ask user for the first number
