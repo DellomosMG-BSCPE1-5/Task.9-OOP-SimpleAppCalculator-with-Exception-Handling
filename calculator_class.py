@@ -9,7 +9,7 @@ class Calculator:
     #constructor
     def __init__(self):
         pass
-    
+
     #under the Calculator class, create a method for the menu
     def menu(self):
         while True:
@@ -81,7 +81,7 @@ class Calculator:
                 if quotient < 1:
                     print("\n\tThe quotient is", format(quotient, ".3f"))
                 else:
-                    print("\n\tThe quotient is", round(quotient))
+                    print("\n\tThe quotient is", format(quotient, ".2f"))
             #if there's an error detected, except block will be executed
             except ZeroDivisionError:
                 print("\n\tZero Division Error: Second number cannot be 0.")
