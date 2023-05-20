@@ -42,12 +42,17 @@ class Calculator:
         difference = inputs[0] - inputs[1]
         #return the difference of the two numbers
         print("The difference is " + str(difference))
-        
-#create method for multiplication operation
-#under the multiplication method, call the get_numbers method to get the inputs from user that are needed to perform the operation
-#perform the multiplication operation on two numbers.
-#the 1st number is inputs[0] and the 2nd number is inputs[1]
-#return the product of the two numbers
+
+    #create method for multiplication operation
+    def multiplication(self):
+        #under the multiplication method, call the get_numbers method to get the inputs from user that are needed to perform the operation
+        inputs = self.get_numbers()
+        #perform the multiplication operation on two numbers.
+        #the 1st number is inputs[0] and the 2nd number is inputs[1]
+        product = inputs[0] * inputs[1]
+        #return the product of the two numbers
+        print("The product is " + str(product))
+
 #create method for division operation
 #under the division method, call the get_numbers method to get the inputs from user that are needed to perform the operation
 #perform the division operation on two numbers.
