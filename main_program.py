@@ -16,5 +16,7 @@ elif operation == 2:
 elif operation == 3:
     simple_calculator.multiplication()
 #if the user enters number 4, call the 'division method'
+else:
+    simple_calculator.division()
 #after using the program, ask the user if he/she wants to use the program again
 
