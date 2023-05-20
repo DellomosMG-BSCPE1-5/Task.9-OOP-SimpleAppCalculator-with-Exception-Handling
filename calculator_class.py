@@ -23,9 +23,13 @@ class Calculator:
         #return the first and second inputs
         return (first_number, second_number)
 
-#create method for addition operation
-#under the addition method, perform the addition operation on two numbers
-#return the sum of the two numbers
+    #create method for addition operation
+    def addition(self):
+        #under the addition method, perform the addition operation on two numbers
+        sum = first_number + second_number
+        #return the sum of the two numbers
+        return sum
+        
 #create method for subtraction operation
 #under the subtraction method, perform the subtraction operation on two numbers
 #return the difference of the two numbers
