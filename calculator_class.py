@@ -14,12 +14,15 @@ class Calculator:
         #return operation
         return operation
     
-#create a method for the user input
-    def get_numbers():
-#under the user input method, ask user for the first number
-#under the user input method, ask user for the second number
-#insert exception handling incase the user enters a wrong input such as wrong variable type
-#ask the user again for input after showing the error notice.
+    #create a method for the user input
+    def get_numbers(self):
+        #under the user input method, ask user for the first number
+        first_number = float(input("\n\tEnter first number: "))
+        #under the user input method, ask user for the second number
+        second_number = float(input("\tEnter second number: "))
+        #return the first and second inputs
+        return (first_number, second_number)
+
 #create method for addition operation
 #under the addition method, perform the addition operation on two numbers
 #return the sum of the two numbers
