@@ -3,14 +3,14 @@ from colorama import Fore, Back, Style
 from pyboxen import boxen
 
 class UserInterface:
-
+    
+    #title
     def title(self):
-        #title
         program_title = text2art("  CALCULATE  IT!  ", font='tarty1', chr_ignore=True)
         print(Fore.CYAN + program_title)
-
+    
+    #header
     def header(self):
-        #header
         print('\n' +
                 boxen(
                     "  Welcome to Calculate it! A calculator for every need, accuracy at your fingertips.  ",
@@ -19,12 +19,14 @@ class UserInterface:
                 )
             )
 
+    #menu
     def menu(self):
         while True:
-            print("\nOPTIONS: \n\t[1] Addition, \n\t[2] Subtraction, \n\t[3] Multiplication, \n\t[4] Division")
+            print(Fore.CYAN + Style.BRIGHT + "OPTIONS:", Fore.WHITE + Style.NORMAL + "\n[1] Addition, \n[2] Subtraction, \n[3] Multiplication, \n[4] Division")
             try:
                 #under the menu method, ask the user what operation he/she wants to use
-                operation = int(input("\tKindly enter the number that corresponds to the operation you want to perform: "))
+                print(Fore.LIGHTCYAN_EX + Style.NORMAL + "\nKindly enter the number that corresponds to the operation you want to perform: ", end = "")
+                operation = float(input(Fore.WHITE + ""))     
                 #if the input is among number 1-4, then return operation
                 if operation in range (1,5):
                     return operation
@@ -35,7 +37,7 @@ class UserInterface:
             except (ValueError, TypeError):
                 print("\n\tInvalid Input. Please enter a numeric character.")
     
-        #create a method for the user input
+    #method for the user input
     def get_numbers(self):
         while True:
             try:
