@@ -1,4 +1,5 @@
 #importing the classes and modules into the main_program file
+from colorama import Fore, Style
 from calculator_class import Calculator
 from user_interface import UserInterface
 
@@ -27,13 +28,15 @@ while True:
     else:
         simple_calculator.division()
 
+    print("\n" + "=" * 95)
     #ask if user wants to use the program again
-    again = input("\nDo you want to use the program again? Type Y to restart or press another key to quit: ")  # Asking the user if he/she wants to try/start again.
+    again = input("Do you want to use the program again? Type Y to restart or press another key to quit: ")  # Asking the user if he/she wants to try/start again.
     #if user typed "y", go back to the top.
     if again.upper() == "Y":  
         continue
+    print( "=" * 95)
     #else, if the user press other key, quit the program.
-    print("\nThank you for using this program! Have a Nice Day!\n")
+    print(Fore.CYAN + Style.BRIGHT + "\nThank you for using this program! Have a Nice Day!\n")
     break
 
 

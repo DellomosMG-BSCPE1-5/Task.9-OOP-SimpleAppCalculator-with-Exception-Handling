@@ -1,7 +1,7 @@
 #Redo calculator program applying the OOP concept.
 #import the UserInterface Class and some modules
 from pyboxen import boxen
-from colorama import Fore, Back, Style
+from colorama import Fore, Style
 from user_interface import UserInterface
 
 #construct an object
@@ -16,7 +16,7 @@ class Calculator:
 
     #create method for addition operation
     def addition(self):
-        #under the addition method, call the get_numbers method to get the inputs from user that are needed to perform the operation
+        #ask inputs from user that are needed to perform the operation
         inputs = input.get_numbers()
         #perform the addition operation on two numbers and print the sum of the two numbers
         #the 1st number is inputs[0] and the 2nd number is inputs[1]
@@ -24,25 +24,23 @@ class Calculator:
 
     #create method for subtraction operation
     def subtraction(self):   
-        #under the subtraction method, call the get_numbers method to get the inputs from user that are needed to perform the operation
+        #ask inputs from user that are needed to perform the operation
         inputs = input.get_numbers()
         #perform the subtraction operation on two numbers.
         print(Fore.CYAN + Style.BRIGHT + "\nThe difference is", Fore.WHITE + Style.NORMAL + str(inputs[0] - inputs[1]))
 
-
     #create method for multiplication operation
     def multiplication(self):
-        #under the multiplication method, call the get_numbers method to get the inputs from user that are needed to perform the operation
+        #ask inputs from user that are needed to perform the operation
         inputs = input.get_numbers()
         #perform the multiplication operation on two numbers.
         print(Fore.CYAN + Style.BRIGHT + "\nThe product is", Fore.WHITE + Style.NORMAL + str(inputs[0] * inputs[1]))
-
 
     #create method for division operation
     def division(self):
         while True:
             try:
-                #under the division method, call the get_numbers method to get the inputs from user that are needed to perform the operation
+                #ask inputs from user that are needed to perform the operation
                 inputs = input.get_numbers()
                 #perform the division operation on two numbers.
                 quotient = inputs[0] / inputs[1]
