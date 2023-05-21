@@ -1,15 +1,17 @@
+#import the some modules
 from art import *
 from colorama import Fore, Back, Style
 from pyboxen import boxen
 
+#create a class named UserInterface
 class UserInterface:
     
-    #title
+    #title method
     def title(self):
         program_title = text2art("  CALCULATE  IT!  ", font='tarty1', chr_ignore=True)
         print(Fore.CYAN + program_title)
     
-    #header
+    #header method
     def header(self):
         print('\n' +
                 boxen(
@@ -54,9 +56,9 @@ class UserInterface:
         while True:
             try:
                 #under the user input method, ask user for the first number
-                first_number = float(input("\n\tEnter first number: "))
+                first_number = float(input("\nEnter first number: "))
                 #ask user for the second number
-                second_number = float(input("\tEnter second number: "))
+                second_number = float(input("Enter second number: "))
                 #return the first and second inputs
                 return (first_number, second_number)
             #if there's an error detected, except block will be executed

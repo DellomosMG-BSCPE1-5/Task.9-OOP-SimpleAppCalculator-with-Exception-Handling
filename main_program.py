@@ -2,7 +2,7 @@
 from calculator_class import Calculator
 from user_interface import UserInterface
 
-#construct an object named simple_calculator
+#construct objects
 simple_calculator = Calculator()
 the_interface = UserInterface()
 
