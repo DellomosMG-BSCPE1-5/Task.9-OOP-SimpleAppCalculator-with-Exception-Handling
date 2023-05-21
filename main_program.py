@@ -1,11 +1,15 @@
-#importing the Calculator class into the main_program file
+#importing the classes and modules into the main_program file
 from calculator_class import Calculator
+from user_interface import UserInterface
 
 #construct an object named simple_calculator
 simple_calculator = Calculator()
+title_header = UserInterface()
 
-#after using the program, ask the user if he/she wants to use the program again
 while True:
+
+    title_header.title()
+    title_header.header()
 
     #by calling the 'menu method', diplay the menu and ask the user what operation he/she wants to use
     operation = simple_calculator.menu()
@@ -22,6 +26,7 @@ while True:
     #if the user enters number 4, call the 'division method'
     else:
         simple_calculator.division()
+
     
     #ask if user wants to use the program again
     again = input("\nDo you want to use the program again? Type Y to restart or press another key to quit: ")  # Asking the user if he/she wants to try/start again.
