@@ -1,6 +1,6 @@
 # CMPE 103 OBJECT-ORIENTED PROGRAMMING
 ```
-LAB EXERCISE No. 7 – Simple Calculator, OOP Applied
+LAB EXERCISE No. 8 – Simple Calculator, OOP Applied
 ```
 
 ## Task Instruction:
