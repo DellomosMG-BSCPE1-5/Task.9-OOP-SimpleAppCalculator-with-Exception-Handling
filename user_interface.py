@@ -10,7 +10,7 @@ class UserInterface:
     def title(self):
         program_title = text2art("  CALCULATE  IT!  ", font='tarty1', chr_ignore=True)
         print(Fore.CYAN + program_title)
-    
+        
     #header method
     def header(self):
         print('\n' +
