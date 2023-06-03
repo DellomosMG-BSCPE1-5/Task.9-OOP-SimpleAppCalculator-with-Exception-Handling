@@ -28,8 +28,11 @@ while True:
     elif operation == 3:
         simple_calculator.multiplication()
     #if the user enters number 4, call the 'division method'
-    else:
+    elif operation == 4:
         simple_calculator.division()
+    #else, if the user enters number 5, call the 'exponent method'
+    else:
+        simple_calculator_pt2.exponent()
 
     print("\n" + "=" * 95)
     #ask if user wants to use the program again

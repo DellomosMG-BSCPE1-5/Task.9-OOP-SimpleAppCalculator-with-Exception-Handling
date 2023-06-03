@@ -1,8 +1,7 @@
 #import modules
 from art import *
-from colorama import Fore, Back, Style
+from colorama import Fore, Style
 from pyboxen import boxen
-
 
 #imports class Calculator and class UserInterface
 from calculator_class import Calculator
@@ -43,7 +42,7 @@ class CalculatorAppend(UserInterface, Calculator):
     
     #Override the get_numbers method from the class UserInterface and add some message
     def get_numbers(self):
-        while True:
+          while True:
             try:
                 #under the user input method, ask user for the first number
                 first_number = float(input("\nEnter first number that serves as your Base Number: "))
@@ -59,4 +58,13 @@ class CalculatorAppend(UserInterface, Calculator):
                             color="cyan",
                             padding = (0,7,0,7)
                         )
-                    )       
+                    )      
+    
+    #Add a new operation for the simple calculator and that is the Exponent Operation.
+    def exponent(self):
+            #ask inputs from user that are needed to perform the operation
+            inputs = self.get_numbers()
+            first_number = inputs[0]
+            second_number = inputs[1]
+            #perform the exponent operation on two numbers and print the power of the two numbers
+            print(Fore.CYAN + Style.BRIGHT + "\nThe answer is", Fore.WHITE + Style.NORMAL + str(first_number ** second_number))
