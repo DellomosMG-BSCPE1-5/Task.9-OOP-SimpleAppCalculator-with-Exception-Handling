@@ -2,10 +2,12 @@
 from colorama import Fore, Style
 from calculator_class import Calculator
 from user_interface import UserInterface
+from calculator_class_inheritance import CalculatorAppend
 
 #construct objects
 simple_calculator = Calculator()
 the_interface = UserInterface()
+simple_calculator_pt2 = CalculatorAppend()
 
 while True:
 
@@ -13,7 +15,8 @@ while True:
     the_interface.header()
 
     #by calling the 'menu method', diplay the menu and ask the user what operation he/she wants to use
-    operation = the_interface.menu()
+    #operation = the_interface.menu()
+    operation = simple_calculator_pt2.menu()
 
     #if the user enters number 1, call the 'addition method'
     if operation == 1:
