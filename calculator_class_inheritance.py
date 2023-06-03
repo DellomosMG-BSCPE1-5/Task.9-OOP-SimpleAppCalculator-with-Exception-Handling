@@ -13,7 +13,7 @@ class CalculatorAppend(UserInterface, Calculator):
     #Override the Menu method of class UserInterface adding the Exponent Operation in the menu.
     def menu(self):
         while True:
-            print(Fore.CYAN + Style.NORMAL + "OPTIONS:", Fore.WHITE + Style.NORMAL + "=" * 86, "\n[1] Addition \n[2] Subtraction \n[3] Multiplication \n[4] Division \n[5]Exponent\n" + "=" * 95)
+            print(Fore.CYAN + Style.NORMAL + "OPTIONS:", Fore.WHITE + Style.NORMAL + "=" * 86, "\n[1] Addition \n[2] Subtraction \n[3] Multiplication \n[4] Division \n[5] Exponent\n" + "=" * 95)
             try:
                 #under the menu method, ask the user what operation he/she wants to use
                 print(Fore.LIGHTCYAN_EX + Style.NORMAL + "\nKindly enter the number that corresponds to the operation you want to perform: ", end = "")

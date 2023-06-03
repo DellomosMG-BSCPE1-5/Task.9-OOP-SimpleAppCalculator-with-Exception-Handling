@@ -20,16 +20,16 @@ while True:
 
     #if the user enters number 1, call the 'addition method'
     if operation == 1:
-        simple_calculator.addition()
+        simple_calculator_pt2.addition()
     #if the user enters number 2, call the 'subtraction method'
     elif operation == 2:
-        simple_calculator.subtraction()
+        simple_calculator_pt2.subtraction()
     #if the user enters number 3, call the 'multiplication method'
     elif operation == 3:
-        simple_calculator.multiplication()
+        simple_calculator_pt2.multiplication()
     #if the user enters number 4, call the 'division method'
     elif operation == 4:
-        simple_calculator.division()
+        simple_calculator_pt2.division()
     #else, if the user enters number 5, call the 'exponent method'
     else:
         simple_calculator_pt2.exponent()

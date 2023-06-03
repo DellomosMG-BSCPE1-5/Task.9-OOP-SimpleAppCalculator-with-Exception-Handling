@@ -1,6 +1,6 @@
 #import the some modules
 from art import *
-from colorama import Fore, Back, Style
+from colorama import Fore, Style
 from pyboxen import boxen
 
 #create a class named UserInterface
